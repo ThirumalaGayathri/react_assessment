@@ -11,7 +11,6 @@ class Modal extends Component {
            key: props.key,
         }
     }
-
 titleHandler(e) {
         this.setState({ title: e.target.value });
     }
