@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Demo from "../../mock/AppMock";
 
-class TodoInput extends Component {
+class Input extends Component {
   render() {
     return (
       <div className="input_div">
@@ -16,5 +16,5 @@ class TodoInput extends Component {
     );
   }
 }
-TodoInput.defaultProps = { Content: Demo };
-export default TodoInput;
+Input.defaultProps = { Content: Demo };
+export default Input;

@@ -2,7 +2,7 @@ import { map } from "jquery";
 import React, { Component } from "react";
 import Modal from "./ModalApp";
 import Demo from "../mock/AppMock";
-import TodoButtons from "./common/todoButtons";
+import Buttons from "./common/Buttons";
 
 class List extends Component {
   constructor(props) {
@@ -52,9 +52,9 @@ class List extends Component {
           <td> </td>
           <td>
             <div data-toggle="modal" data-target="#exampleModal">
-            <TodoButtons id="edit" className="btn btn-primary" name={this.props.Content.editButtonText} onClick={() => this.editItem(item)}/>
+            <Buttons id="edit" name={this.props.Content.editButtonText} onClick={() => this.editItem(item)}/>
             </div><br/>
-            <TodoButtons id="delete" className="btn btn-danger" name={this.props.Content.deleteButtonText} onClick={() => this.deleteItem(item)}/>
+            <Buttons id="delete" name={this.props.Content.deleteButtonText} onClick={() => this.deleteItem(item)}/>
           </td>
         </tr>
       );

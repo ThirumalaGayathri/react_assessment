@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Demo from '../mock/AppMock';
-import TodoButtons from './common/todoButtons';
+import Buttons from './common/Buttons';
 
 class Modal extends Component {
     constructor(props) {
@@ -38,8 +38,8 @@ handleSave() {
                             <p><span  className="modal-lable"></span><input id="edit item" value={this.state.title} onChange={(e) => this.titleHandler(e)} /></p>
                             </div>
                         <div className="modal-footer" data-dismiss="modal">                           
-                       <TodoButtons type="button" className="btn btn-danger" name={this.props.Content.popupCancel}/>
-                       <TodoButtons id="ok" type="button" className="btn btn-primary" onClick={() => this.handleSave()} name={this.props.Content.popupSave}/>                       
+                       <Buttons type="button"  name={this.props.Content.popupCancel}/>
+                       <Buttons id="ok" type="button"  onClick={() => this.handleSave()} name={this.props.Content.popupSave}/>                       
                         </div>
                     </div>
                 </div>

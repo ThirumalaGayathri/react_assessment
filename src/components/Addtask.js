@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import List from "./List";
 import "../style/App.css";
 import Demo from "../mock/AppMock";
-import TodoInput from "./common/todoInput";
-import TodoButtons from "./common/todoButtons";
+import Input from "./common/Input";
+import Buttons from "./common/Buttons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export class Addtask extends Component {
@@ -37,8 +37,8 @@ export class Addtask extends Component {
       <div className="add">
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="content"></label>
-          <TodoInput id="addtext" placeholder={this.props.Content.enter} content={this.state.content} handleChange={this.handleChange}/><br/>
-          <TodoButtons type="submit" name={this.props.Content.addButtonText} />
+          <Input id="addtext" placeholder={this.props.Content.enter} content={this.state.content} handleChange={this.handleChange}/><br/>
+          <Buttons type="submit" name={this.props.Content.addButtonText} />
         </form><br/>
         <div>
           <List data={this.state.data} />

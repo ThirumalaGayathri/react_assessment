@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style/App.css';
 import Addtask from './Addtask';
 import Demo from "../mock/AppMock";
